@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML HomePage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="modal.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Disorts</a>
+      <nav class="nav-items">
+        <a href="#about">About</a>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <!-- <h1>A Web Developer</h1>
+        <p>I am a web developer and I love to create websites.</p>
+        <button>Learn More</button> -->
+      </div>
+      <section>
+        <div class="achievements">
+          <div class="work">
+            <img
+              src="https://pbs.twimg.com/media/GT1LQRJXMAE-FOw?format=jpg&name=large"
+              alt="Pasamontañas multiusos"
+            />
+            <p class="work-heading">Pasamontañas Multiusos</p>
+          </div>
+          <div class="work">
+            <img
+              src="https://pbs.twimg.com/media/GT1LQROXcAA9lzQ?format=jpg&name=large"
+              alt="Conjunto para arquería"
+            />
+            <p class="work-heading">Conjunto de Arquero en Licra</p>
+          </div>
+          <div class="work">
+            <img
+              src="https://pbs.twimg.com/media/GT1ZBIfW8AAThfo?format=jpg&name=large"
+              alt="Buzo arquería"
+            />
+            <p class="work-heading">Buzo de Arquero para Niño</p>
+          </div>
+          <!-- <div class="work">
+            <img src="" alt="" />
+            <p class="work-heading">Network</p>
+            <p class="work-text">
+              I have a lot of network skills and I am very good at them. I am
+              very good at networking and I am always looking for new network
+              skills.
+            </p>
+          </div> -->
+      </section>
+      <div class="about-me" id="about">
+        <div class="about-me-text">
+            <img
+              src="https://pbs.twimg.com/media/GT1LQRIXAAAsObT?format=jpg&name=medium"
+              alt="me"
+            />
+          <h2>Sobre Disorts</h2>
+            <blockquote>
+              <q>Transformando el deporte con estilo y confort</q>
+            </blockquote>
+            <p>
+                En Disorts, nos especializamos en la creación de ropa deportiva de alta calidad diseñada para ofrecer estilo y rendimiento a deportistas de todos los niveles.
+            </p>
+            <p>
+                Descubre nuestra última colección de leggings deportivos diseñados para ofrecer soporte y estilo en cada movimiento.
+            </p>
+            <p>
+                Utilizamos tejidos avanzados que mejoran el rendimiento y la comodidad durante cualquier actividad física.
+            </p>
+            <p>
+                Detrás de Disor está una familia apasionada por el deporte y la moda, dedicada a ofrecer lo mejor en ropa deportiva.
+            </p>            
+          <span><i class="fa-sharp fa-solid fa-circle-info"></i></span>
+        <button onclick="abrirModal('modalContact')">Mas Información</button>
+      </div>
+      <div id="modalContact" class="modal">
+          <div class="modal-contenido">
+              <span class="cerrar" onclick="cerrarModal('modalContact')">&times;</span>
+              <h3>Contacto</h3>
+              <p>Telefono 3044742845</p>
+              <p>Email disort7@gmail.com</p>
+              <!-- 3113671034 WhastsApp -->
+          </div>
+      </div>
+        </div>
+
+      </div>
+      <section class="contact">
+        <div class="bottom-links">
+            <div class="links">
+              
+        <div class="links">
+            <span>Social Links</span>            
+            <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+            <a href="https://x.com/EdwinToro_"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div>
+        <a href="https://decaldas.github.io/home/" target="_blank">
+          <div class="copy">© <span id="copyright-year"></span> De Caldas</div>
+        </a>
+        <script>
+          const copyrightYear = document.getElementById("copyright-year");
+          copyrightYear.textContent = new Date().getFullYear();
+        </script>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
